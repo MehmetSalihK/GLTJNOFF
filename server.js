@@ -19,15 +19,6 @@ setInterval(() => {
 // It's default from glitch.com.
 // Restart the bot and wait until 5 minutes forward.
 
-
-app.get("/", (request, response) => {
-  console.log(`Il ne faisait pas de cliquetis en ce moment. Alors ça n'a pas été pongé ....`);
-  response.sendStatus(200);
-});
-setInterval(() => {
-  http.get(`https://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 280000);
-
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 const Discord = require('discord.js')
